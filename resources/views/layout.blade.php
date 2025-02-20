@@ -62,7 +62,7 @@
         </div>
     </div>
 
-    <!-- Edit Task Modal -->
+    <!-- Editing Task Modal -->
     <div class="modal fade" id="editTaskModal" tabindex="-1" aria-labelledby="editTaskModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -103,7 +103,7 @@
 
     <!-- Custom JavaScript -->
     <script>
-        // Fetch and display tasks
+        // Fetching and displaying tasks
         function fetchTasks() {
             fetch('/api/tasks')
                 .then(response => response.json())
@@ -128,7 +128,7 @@
                 });
         }
 
-        // Create a new task
+        // Creating a new task
         document.getElementById('createTaskForm').addEventListener('submit', function (e) {
             e.preventDefault();
             const formData = new FormData(this);
@@ -146,7 +146,7 @@
             });
         });
 
-        // Open edit modal
+        // Opening edit modal
         function openEditModal(taskId) {
             fetch(`/api/tasks/${taskId}`)
                 .then(response => response.json())
@@ -159,7 +159,7 @@
                 });
         }
 
-        // Update a task
+        // Updating a task
         document.getElementById('editTaskForm').addEventListener('submit', function (e) {
             e.preventDefault();
             const taskId = document.getElementById('editTaskId').value;
@@ -178,7 +178,7 @@
             });
         });
 
-        // Delete a task
+        // Deleting a task
         function deleteTask(taskId) {
             if (confirm('Are you sure you want to delete this task?')) {
                 fetch(`/api/tasks/${taskId}`, {
