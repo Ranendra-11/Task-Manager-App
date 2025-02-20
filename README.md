@@ -1,4 +1,4 @@
-# Laravel Task Manager
+# Task Manager
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://images-platform.99static.com/8mc2pZDV0s_nXHMZOF--H-QhZzY=/500x500/top/smart/99designs-contests-attachments/20/20319/attachment_20319607" width="400" alt="Laravel Logo"></a></p>
 
