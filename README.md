@@ -16,30 +16,30 @@ The Laravel Task Manager is a web-based task management application that allows 
 
 ## Setup Instructions
 
-### 1️⃣ Clone the Repository
+### 1️ Clone the Repository
 ```bash
 git clone https://github.com/Ranendra-11/Task-Manager-App.git
 cd Task-Manager-App
 ```
 
-### 2️⃣ Install Dependencies
+### 2️ Install Dependencies
 ```bash
 composer install
 npm install
 ```
 
-### 3️⃣ Configure Environment
+### 3️ Configure Environment
 ```bash
 cp .env.example .env
 php artisan key:generate
 ```
 
-### 4️⃣ Set Up Database
+### 4️ Set Up Database
 ```bash
 php artisan migrate
 ```
 
-### 5️⃣ Start the Application
+### 5️ Start the Application
 ```bash
 php artisan serve
 ```
